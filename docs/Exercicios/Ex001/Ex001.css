@@ -1,0 +1,28 @@
+        body{
+            background-color: red;
+            background-color: rgb(215, 215, 70);
+        }
+
+        #h0001{
+            color: rgb(21, 255, 0);
+            text-align: center;
+        }
+
+        #p0001{
+            text-align: center;
+        }
+
+        #h0002{
+            text-align: right;
+        }
+
+        .Exercicio3{
+            text-align: center;
+            color: aqua;
+        }
+
+        .END, .END1, .END2, .END3{
+            text-align: center;
+            color: coral;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
