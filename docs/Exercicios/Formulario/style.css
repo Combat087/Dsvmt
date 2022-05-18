@@ -1,0 +1,79 @@
+#icon{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+div#interface{
+    background-color: #ffffff;
+    padding-bottom: 100%;
+}
+body{
+    background: linear-gradient(to bottom ,#2599dd 0%,#f0d550 100%);
+    background-size: auto;
+    padding: 10px;
+}
+
+header > h1{
+    text-align: center;
+}
+
+h3{
+    font-size: 12px;
+    opacity: 60%;
+}
+
+nav > ul{
+    margin: 30px;
+    padding: 10px;
+    background-color: #8c8c8c;
+    border-radius: 5px;
+    width: auto;
+}
+
+nav > ul > li{
+    list-style: none;
+    margin-left: 33px;
+    margin-right: 33px;
+    display: inline;
+    
+}
+
+nav > h1{
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.direita{
+    text-align: right;
+    margin-right: 25px;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    background-color: #8c8c8c;
+}
+
+nav > ul > li > a:hover{
+    color: #8c8c8c;
+    background-color: black;
+}
+
+fieldset{
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+
+fieldset#sexo{
+    margin-left: auto;
+    padding-left: auto;
+    margin-right: auto;
+    padding-right: auto;
+    width: auto;
+    height: auto;
+}
