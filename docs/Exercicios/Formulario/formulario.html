@@ -1,0 +1,111 @@
+<!-- Colocar mask -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" src="script.js"></script>
+</head>
+<body>
+
+    <div id="interface">
+        <div>
+            <img id="icon" src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo.png" alt="Icon">
+            <header id="cabecalho">
+                <h1>Formulário de contato</h1>
+                <h2 class="direita">Por Yuri Combat</h2>
+                <h3 class="direita">Atualizado em 11/05/2022</h3>
+            </header>
+        </div>
+        <div>
+            
+            <nav id="menu">
+                <h1>Menu principal</h1>
+                <ul>
+                    <li><a href="formulario.html">Home</a></li>
+                    <li><a href="#">Especificações</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Multimídia</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            
+            <form method="POST">
+                <fieldset id="dadosUsr">
+                    <legend>Dados do usuário</legend>
+                    <p><label for="iName" id="iName">Nome:</label>
+                        <input type="text" name="iName" id="iName" size="30" placeholder="Nome Completo"></p>
+                    <p><label for="iPwd" id="iPwd">Senha:</label>
+                        <input type="password" name="iPwd" id="iPwd" size="30" placeholder="Senha"></p>
+                    <p><label for="iMail" id="iMail">e-Mail</label>
+                        <input type="email" name="iMail" id="iMail" size="40" placeholder="exemplo@gmail.com"></p>
+                    <fieldset id="sexo">
+                        <legend>Sexo</legend>
+                        <input type="radio" name="iSex" id="cMasc">
+                            <label for="cMasc">Masculino</label>
+                        <input type="radio" name="iSex" id="cFem">
+                            <label for="cFem">Feminino</label>
+                        <input type="radio" name="iSex" id="cWni">
+                            <label for="cMasc">Prefiro não informar</label>
+                        <input type="radio" name="iSex" id="cOthr">
+                            <label for="cFem">Outro</label>
+                    </fieldset>
+                    <p><label for="iDate">Data de nascimento:</label>
+                    <input type="date" name="iDate" id="iDate"></p>
+                    <p><label for="iFavC">Cor favorita:</label>
+                    <input type="color" name="iFavC" id="iFavC"></p>
+                </fieldset>
+                <fieldset id="endUsr">
+                    <legend>Endereço do usuário</legend>
+                    <p><label for="iCEP">CEP:</label>
+                    <input type="text" name="iCEP" id="iCEP" data-mask-selectonfocus="true" data-inputmask="99999-999" placeholder="Ex: 12345-678" max="99999999" min="00000000"></p>
+                    <p><label for="iNmr">Número:</label>
+                    <input type="number" name="iNmr" id="iNmr" min="0" max="99999"></p>
+                    <p><label for="iState">Estado:</label>
+                    <select name="iState" id="iState">
+                        <optgroup label="Região Sudeste">
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Região Nordeste">
+                            <option value="BA">Bahia</option>
+                        </optgroup>
+                    </select></p>
+                    <p><label for="iCity">Cidade:</label>
+                    <input type="text" name="iCity" id="iCity" list="cidades"></p>
+                    <datalist id="cidades">
+                        <option value="Rio de Janeiro"></option>
+                        <option value="Nova Iguaçu"></option>
+                        <option value="Niteroi"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset id="MSG">
+                    <legend>Mensagem</legend>
+                    <p><label for="iUrg">Urgencia:</label>
+                    0<input type="range" name="iUrg" id="iUrg" min="0" max="10" step="1">10</p>
+                    <p><label for="iMsg">Mensagem:</label>
+                    <input type="text" name="iMsg" id="iMsg" size="35" placeholder="Deixe sua mensagem"></p>
+                </fieldset>
+                <fieldset id="pedUsr">
+                    <legend>Interesse em curso</legend>
+                    <p><input type="checkbox" name="iRqst" id="iRqst">
+                    <label for="iRqst"> Quero fazer um curso no SENAI (R$ 1,000)</label></p>
+                    <label for="oPrice">Preço total:</label><p id="oPrice"></p>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <footer id="rodape">
+                <p>Copyright &copy; 2022 - by Yuri Combat</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
