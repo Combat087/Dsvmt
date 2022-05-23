@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IMC - calc</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Redacted+Script:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+        <h1>AtiFit</h1>
+        <h2>Você só depende da <strong>sua</strong> atitude para se tornar fitness</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a> | </li>
+                <li><a href="#calcImc">Calcular seu IMC</a> | </li>
+                <li><a href="#">Contato</a> | </li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <body>
+            <div id="explic">
+            <h2 class="esquerda">Nosso trabalho</h2>
+            <p class="esquerda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veniam suscipit libero cum, fugiat corporis quibusdam modi omnis, deleniti architecto tempore dignissimos nulla labore voluptas laudantium, soluta ipsa doloribus! Tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, ratione! Facere quibusdam quaerat ipsa est eveniet assumenda, sequi excepturi ullam possimus earum aliquid harum neque maiores fugit, consequatur eius eos! Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <h2 class="esquerda">Nossos treinos</h2>
+            <p class="esquerda">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam ipsa, quae dolore enim vel accusantium voluptas? Illo, architecto amet alias officia cupiditate sed, qui odit ullam cum officiis eveniet! Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+            <h2 class="esquerda">Nossas dietas</h2>
+            <p class="esquerda">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus unde quaerat porro odio dicta accusamus modi consectetur, iste animi quod neque reiciendis. Eius, praesentium expedita dolor ex dolores exercitationem sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, iure at inventore quidem ad molestiae id pariatur alias expedita magnam, suscipit assumenda?</p>
+            <div><img src="images/treino.png" alt="Imagem treino" id="imageTreino"></div>
+            </div>
+            <div id="calcImc">
+            <h2>Agora vamos calcular seu IMC</h2>
+            <p>Calcular o seu IMC é exencial para saber se você está magro ou com o peso acima da média de acordo com a sua altura, então vamos lá insira:</p>
+            <p><label for="iAlt">Sua altura (cm): </label>
+            <input type="number" name="iAlt" id="iAlt" max="300" min="1" maxlength="3"></p>
+            <p><label for="iPeso">Seu peso (Kg): </label>
+            <input type="number" name="iPeso" id="iPeso" max="600" min="1" maxlength="3"></p>
+            <button id="BtnReset" type="reset" onclick="Resetar()">Resetar valores</button>
+            <button id="BtnCalc" type="submit" onclick="Calcular()">Calcular</button>
+            <p>Seu IMC é: <span id="ResultIMC"></span></p>
+            </div>
+    </body>
+    <footer>
+    </footer>
+</body>
+</html>
